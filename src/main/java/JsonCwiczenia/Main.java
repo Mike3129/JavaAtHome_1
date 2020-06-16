@@ -61,5 +61,35 @@ public class Main {
 
         //zadanie 4
 
+        String json4 = "{\n" +
+                "   \"rodzaj\":\"wielokat\",\n" +
+                "   \"punkty\":[\n" +
+                "      {\n" +
+                "         \"posx\":23.0,\n" +
+                "         \"posy\":3.0\n" +
+                "      },\n" +
+                "      {\n" +
+                "         \"posx\":55.0,\n" +
+                "         \"posy\":2.1\n" +
+                "      },\n" +
+                "      {\n" +
+                "         \"posx\":-35.0,\n" +
+                "         \"posy\":1.5452\n" +
+                "      },\n" +
+                "      {\n" +
+                "         \"posx\":2.5654,\n" +
+                "         \"posy\":1.1\n" +
+                "      }\n" +
+                "   ]\n" +
+                "}";
+
+        ObjectMapper zad4 = new ObjectMapper();
+        try {
+            jsonZad4 figura = zad4.readValue(json4,jsonZad4.class);
+            System.out.println(figura);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
