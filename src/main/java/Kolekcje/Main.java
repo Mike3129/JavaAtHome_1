@@ -1,11 +1,12 @@
 package Kolekcje;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args){
-        System.out.println("Hello World");
-        System.out.println("Witaj świecie 2");
-        System.out.println("hhehe");
-        System.out.println("kojelna próba");
+        System.out.println("Wyświetlmy listę");
+        KolekcjeZadania.zad_1();
+
     }
 }
 
