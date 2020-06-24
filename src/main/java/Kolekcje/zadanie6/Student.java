@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+public class Student implements Comparable<Student> {
     private List<Double> oceny = new ArrayList<>();
     private String imie, nazwisko, index;
 
@@ -18,6 +18,10 @@ public class Student {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.index = index;
+    }
+    public int compareTo(Student other) {
+        // dokonuje parsowania ze String -> Integer obu liczb/indeksów.
+        return Integer.compare(Integer.parseInt(this.index), Integer.parseInt(other.index));
     }
 
 }

@@ -54,7 +54,9 @@ public class Dziennik {
     }
 
     public List<Student> sortowanie(){
-        Collections.sort(list);
+       Collections.sort(list);
+       return list;
+
     }
 
 

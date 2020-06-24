@@ -42,7 +42,7 @@ public class Main {
 
         //zwrot posortowanej listy
 
-
+        dziennik.sortowanie();
 
     }
 
