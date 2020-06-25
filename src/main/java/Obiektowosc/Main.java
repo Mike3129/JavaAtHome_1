@@ -9,5 +9,11 @@ public class Main {
         rachunek.dodajProdukt(new Produkt("Chleb",1.55,PodatekProduktu.VAT23));
         rachunek.dodajProdukt(new Produkt("Ser",6.77,PodatekProduktu.VAT23));
         rachunek.wyswietlRachunek();
+        System.out.println("Suma netto wynosi: " + rachunek.sumaCenNetto());
+        System.out.println("Suma brutto wynosi: " + rachunek.sumaBrutto());
+        System.out.printf("Watość podatku: %.2f", rachunek.wartoscPodatku());
+
+
+
     }
 }

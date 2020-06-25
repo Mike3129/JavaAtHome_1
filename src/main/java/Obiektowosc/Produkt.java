@@ -11,9 +11,10 @@ public class Produkt {
     private Double cenaProduktu;
     private PodatekProduktu podatekProduktu;
 
-    public static void podajCeneBrutto(Double cenaNetto){
-        double cenaBrutto = cenaNetto + (cenaNetto * PodatekProduktu.VAT23.getWartoscPodatku());
+    public static void  podajCeneBrutto(Double cenaNetto){
+        Double cenaBrutto = cenaNetto + (cenaNetto * PodatekProduktu.VAT23.getWartoscPodatku());
         System.out.println(cenaBrutto);
+
     }
 
     public Produkt(String nazwaProduktu, Double cenaProduktu, PodatekProduktu podatekProduktu){
