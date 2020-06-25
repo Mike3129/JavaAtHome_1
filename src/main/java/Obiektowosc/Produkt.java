@@ -11,7 +11,7 @@ public class Produkt {
     private Double cenaProduktu;
     private PodatekProduktu podatekProduktu;
 
-    public static void podajCeneBrutto(double cenaNetto){
+    public static void podajCeneBrutto(Double cenaNetto){
         double cenaBrutto = cenaNetto + (cenaNetto * PodatekProduktu.VAT23.getWartoscPodatku());
         System.out.println(cenaBrutto);
     }
@@ -20,6 +20,15 @@ public class Produkt {
         this.nazwaProduktu = nazwaProduktu;
         this.cenaProduktu = cenaProduktu;
         this.podatekProduktu = podatekProduktu;
+    }
+
+    @Override
+    public String toString() {
+        return "Produkt{" +
+                "nazwaProduktu='" + nazwaProduktu + '\'' +
+                ", cenaProduktu=" + cenaProduktu +
+                ", podatekProduktu=" + podatekProduktu +
+                '}';
     }
 }
 

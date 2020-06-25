@@ -9,8 +9,8 @@ public enum  PodatekProduktu {
     VAT5(0.05),
     NO_VAT(0.00);
 
-    private double wartoscPodatku;
-    PodatekProduktu(double wartoscPodatku){
+    private Double wartoscPodatku;
+    PodatekProduktu(Double wartoscPodatku){
         this.wartoscPodatku = wartoscPodatku;
     }
 
